@@ -74,14 +74,6 @@ java SmartCampus
 
 ---
 
-📷 Sample Output
-
-* Menu-driven interface displayed in console
-* User selects options to add students, courses, enrollments
-* Thread message shows enrollment processing
-
----
-
 📂 Project Structure
 
 SmartCampus.java  
@@ -90,9 +82,19 @@ data.ser (generated after saving data)
 
 ---
 
-🚀 Unique Feature Added
+Multiple Choice Questions.
 
-* Data persistence using file handling (Save & Load feature)
+1. A developer is implementing student enrollments where each student can enroll in multiple courses. The system should allow quick lookup of a student and their enrolled courses.
+   ANSWER - B. HashMap<Student, ArrayList<Course>>
+
+2. During enrollment, a student enters a negative course fee, causing incorrect processing. The developer wants to ensure invalid data is handled properly.
+   ANSWER - C. Throw a custom exception like InvalidFeeException
+
+3. The system simulates enrollment processing using a thread. However, multiple threads are accessing the same enrollment list, causing inconsistent results.
+   ANSWER - B. Use synchronized block or thread-safe collection
+
+4. A developer wants to enforce a rule that every type of course must implement a method calculateFee() but allow different implementations.
+   ANSWER - B. Interface
 
 ---
 
